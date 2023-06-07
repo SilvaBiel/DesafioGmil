@@ -50,7 +50,7 @@ namespace Desafio.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Cliente>> PostProduto([FromBody] ClienteCreateCommand command)
+        public async Task<ActionResult<Cliente>> PostCliente([FromBody] ClienteCreateCommand command)
         {
             try
             {
@@ -64,7 +64,7 @@ namespace Desafio.Controllers
         }
 
         [HttpDelete("{id:int}")]
-        public async Task<ActionResult<Cliente>> DeleteProduto(int id)
+        public async Task<ActionResult<Cliente>> DeleteCliente(int id)
         {
             try
             {
@@ -79,7 +79,7 @@ namespace Desafio.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult<Cliente>> PutProduto([FromBody] ClienteUpdateCommand command)
+        public async Task<ActionResult<Cliente>> PutCliente([FromBody] ClienteUpdateCommand command)
         {
             try
             {
